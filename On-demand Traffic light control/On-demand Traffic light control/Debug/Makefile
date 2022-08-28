@@ -40,11 +40,13 @@ SUBDIRS :=  \
 ../ECUAL \
 ../MCAL/PWM \
 ../MCAL/Timer \
+../Application \
 ../Utils
 
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
+../Application/Application.c \
 ../ECUAL/Button\ Driver/Button.c \
 ../ECUAL/LED\ Driver/LED.c \
 ../main.c \
@@ -60,6 +62,7 @@ ASM_SRCS +=
 
 
 OBJS +=  \
+Application/Application.o \
 ECUAL/Button\ Driver/Button.o \
 ECUAL/LED\ Driver/LED.o \
 main.o \
@@ -68,6 +71,7 @@ MCAL/PWM/pwm.o \
 MCAL/Timer/timer.o
 
 OBJS_AS_ARGS +=  \
+Application/Application.o \
 "ECUAL/Button Driver/Button.o" \
 "ECUAL/LED Driver/LED.o" \
 main.o \
@@ -76,6 +80,7 @@ MCAL/PWM/pwm.o \
 MCAL/Timer/timer.o
 
 C_DEPS +=  \
+Application/Application.d \
 ECUAL/Button\ Driver/Button.d \
 ECUAL/LED\ Driver/LED.d \
 main.d \
@@ -84,6 +89,7 @@ MCAL/PWM/pwm.d \
 MCAL/Timer/timer.d
 
 C_DEPS_AS_ARGS +=  \
+Application/Application.d \
 "ECUAL/Button Driver/Button.d" \
 "ECUAL/LED Driver/LED.d" \
 main.d \
@@ -105,6 +111,13 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+Application/Application.o: ../Application/Application.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 5.4.0
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\include"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=atmega32a -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\gcc\dev\atmega32a" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
 ECUAL/Button\ Driver/Button.o: ../ECUAL/Button\ Driver/Button.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0

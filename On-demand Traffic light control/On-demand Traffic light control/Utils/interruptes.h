@@ -8,7 +8,7 @@
 
 #ifndef INTERRUPTES_H_
 #define INTERRUPTES_H_
-#include "registers.h"
+#include "Registers.h"
 
 //Interrupt vectors
 #define EXT_INT_0 __vector_1
