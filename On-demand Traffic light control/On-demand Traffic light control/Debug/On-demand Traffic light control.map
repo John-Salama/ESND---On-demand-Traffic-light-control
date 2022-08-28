@@ -112,7 +112,7 @@ Discarded input sections
                 0x00000000       0x28 MCAL/Timer/timer.o
  .debug_ranges  0x00000000       0x18 MCAL/Timer/timer.o
  .debug_line    0x00000000      0x158 MCAL/Timer/timer.o
- .debug_str     0x00000000      0x20f MCAL/Timer/timer.o
+ .debug_str     0x00000000      0x22f MCAL/Timer/timer.o
  .comment       0x00000000       0x31 MCAL/Timer/timer.o
  .debug_frame   0x00000000       0x68 MCAL/Timer/timer.o
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)

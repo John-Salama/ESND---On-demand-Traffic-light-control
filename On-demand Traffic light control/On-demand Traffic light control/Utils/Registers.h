@@ -40,4 +40,11 @@
 #define TIMSK (*(volatile uint8_t*)(0x59))
 #define OCR0 (*(volatile uint8_t*)(0x5C))
 
+//****************************
+//* Interrupt REGISTERS
+//****************************
+#define SREG (*(volatile uint8_t*)(0x5F))
+#define GICR (*(volatile uint8_t*)(0x5B))
+#define MCUCR (*(volatile uint8_t*)(0x55))
+
 #endif /* REGISTERS_H_ */

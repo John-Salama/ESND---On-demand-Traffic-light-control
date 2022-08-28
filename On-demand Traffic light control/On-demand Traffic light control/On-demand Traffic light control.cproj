@@ -169,6 +169,9 @@
     <Compile Include="Utils\bit_manipulation.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="Utils\interruptes.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Utils\Registers.h">
       <SubType>compile</SubType>
     </Compile>

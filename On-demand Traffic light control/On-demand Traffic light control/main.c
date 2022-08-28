@@ -5,18 +5,13 @@
  * Author : john
  */ 
 
-#include "./ECUAL/LED Driver/LED.h"
-#include "./ECUAL/Button Driver/Button.h"
-#include "./MCAL/Timer/timer.h"
-#include "./MCAL/PWM/pwm.h"
+#include "Application/Application.h"
 int main(void)
 {
-	DIO_init(PORT_B,3,OUT);
-	PWM_init_CP();
-	PWM_start(50);
+	APP_init();
     while (1) 
     {
-		
+		APP_start();
     }
 }
 
