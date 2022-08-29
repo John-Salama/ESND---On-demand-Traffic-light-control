@@ -14,4 +14,3 @@ int main(void)
 		APP_start();
     }
 }
-
