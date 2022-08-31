@@ -2,7 +2,7 @@
  * bit_manipulation.h
  *
  * Created: 8/12/2022 6:47:40 PM
- *  Author: fahds
+ *  Author: john
  */ 
 
 

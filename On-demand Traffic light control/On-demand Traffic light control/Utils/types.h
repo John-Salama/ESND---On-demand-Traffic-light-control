@@ -1,6 +1,6 @@
 #pragma once
-#ifndef MACROS
-#define MACROS
+#ifndef types
+#define types
 typedef unsigned char uint8_t;
 typedef signed char int8_t;
 typedef unsigned short uint16_t;
