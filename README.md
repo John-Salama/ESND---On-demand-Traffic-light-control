@@ -8,7 +8,7 @@ Here, I used Proteus 8 Professional in order to simulate AVR Atmega32. I have th
 
 This is a video for the system running on the simulator
 
-(https://user-images.githubusercontent.com/89663721/187759991-de9fc3e9-1af5-4c84-876d-952807305546.mp4)
+https://user-images.githubusercontent.com/89663721/187759991-de9fc3e9-1af5-4c84-876d-952807305546.mp4
 
 ## System Functionality
 - The system handles 6 LEDs
