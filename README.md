@@ -7,7 +7,7 @@ Here, I used Proteus 8 Professional in order to simulate AVR Atmega32. I have th
 ![image](https://github.com/John-Salama/ESND---On-demand-Traffic-light-control/blob/022e93f1468796875167da28661c73580ea3be16/proutes.png)
 
 This is a video for the system running on the simulator.
-https://user-images.githubusercontent.com/89663721/187757091-9645ab12-7363-446d-9614-45f2bc33688c.mp4
+https://user-images.githubusercontent.com/89663721/187759991-de9fc3e9-1af5-4c84-876d-952807305546.mp4
 
 ## System Functionality
 - The system handles 6 LEDs
